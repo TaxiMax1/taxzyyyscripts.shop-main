@@ -1,15 +1,30 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import logoIcon from '/assets/logoIcon.png' 
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
       <div>
-        <h1>TEST</h1>
+        <header className="header-container">
+          <nav className="navbar-container" id="navbar-container">
+            <img className="logoImg" src={logoIcon} alt="Logo" />
+
+            <h3>
+              <a href="">Store</a>
+            </h3>
+            <h3>
+              <a href="">
+                Products <FontAwesomeIcon icon={faChevronDown} />
+              </a>
+            </h3>
+            <h3>
+              <a href="https://docs.taxzyyyscripts.xyz">Docs</a>
+            </h3>
+          </nav>
+        </header>  
       </div>
     </>
   )
