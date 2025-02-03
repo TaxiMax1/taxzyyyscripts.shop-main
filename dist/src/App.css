@@ -7,6 +7,12 @@
     --header-text: #ffffffb3;
     --header-text-hover: #fff;
 
+    --button-bg: #fff;
+    --button-bg-hover: #ffffffb9;
+    --button-text: #000;
+
+    --border-color: #ffffff1a;
+
     --font-family: Roboto, sans-serif;;
 }
 
@@ -35,7 +41,6 @@ body {
   display: flex;
   justify-content: center; 
   align-items: center;
-  padding: 20px;
   user-select: none;
 }
 
@@ -44,8 +49,10 @@ body {
   align-items: center; 
   justify-content: center; 
   gap: 50px;
+  height: 40px; 
+  padding: 7px 0px; 
+  margin-left: 60px;
 }
-
 
 .navbar-container h3 {
   font-size: 12px;
@@ -73,19 +80,146 @@ body {
 
 .logoImg {
   width: 100%;
-  max-width: 40px;
-  padding: 10px 90px;
+  max-width: 95px;
+  margin-top: 3px;
+  margin-left: -55px;
   justify-items: center;
   align-items: center;
+  display: block;
 }
 
 #discord-icon {
   width: 100%;
-  max-width: 17px;
-  margin-left: 50px;
+  font-size: 15px;
+  margin-left: 30px;
+}
+
+#github-icon {
+    font-size: 17px; 
 }
 
 .socials-container {
+  color: var(--header-text-hover);
   display: flex;
   align-items: center;
+  transition: all .4s ease-in-out;
+}
+
+.socials-container:hover {
+    color: var(--header-text);
+}
+
+
+
+.scripts-conatiner {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    background-color: #13151780;
+    height: 40px; 
+    padding: 5px 0px; 
+    border-top: 1px solid var(--border-color);
+}
+
+.preview-script {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 513px;
+    user-select: none; 
+}
+
+.preview-script p {
+    color: var(--header-text-hover);
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0; 
+}
+
+.buy-button {
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    padding: 5px 15px;
+    font-size: 12px;
+    font-weight: 500;
+    outline: none;
+    border: none;
+    border-radius: 12px;
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+}
+
+.buy-button:hover {
+    background-color: var(--button-bg-hover);
+}
+
+
+
+
+.showcase-container {
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  background-color: transparent;
+  height: 40px; 
+  padding: 200px 0px; 
+  color: var(--text-color);
+}
+
+.mechanic-tablet {
+  padding: 200px 0px; 
+  text-align: center;
+  justify-content: center;
+  margin-left: -450px;
+}
+
+.mechanic-tablet h1 {
+  font-size: 30px;
+}
+
+.mechanic-tablet h3 {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+
+
+
+.police-tablet {
+  padding: 200px 0px; 
+  text-align: center;
+  justify-content: center;
+  margin-left: -450px;
+}
+
+.police-tablet h1 {
+  font-size: 30px;
+}
+
+.police-tablet h3 {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+
+
+.supported-frameworks {
+    background-color: transparent;
+    color: var(--header-text);
+    font-size: 12px;
+    display: flex;
+    width: 100%;
+    max-width: 45px;
+    height: 30px;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    margin-left: 150px;
+}
+
+.supported-frameworks p {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    margin: 12px 11px;
 }
