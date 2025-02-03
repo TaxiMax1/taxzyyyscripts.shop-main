@@ -41,8 +41,11 @@ body {
 
 .navbar-container {
   display: flex;
+  align-items: center; 
+  justify-content: center; 
   gap: 50px;
 }
+
 
 .navbar-container h3 {
   font-size: 12px;
@@ -66,4 +69,23 @@ body {
 .navbar-container h3 a:hover,
 .navbar-container h3 a:focus {
   color: var(--header-text-hover);
+}
+
+.logoImg {
+  width: 100%;
+  max-width: 40px;
+  padding: 10px 90px;
+  justify-items: center;
+  align-items: center;
+}
+
+#discord-icon {
+  width: 100%;
+  max-width: 17px;
+  margin-left: 50px;
+}
+
+.socials-container {
+  display: flex;
+  align-items: center;
 }
