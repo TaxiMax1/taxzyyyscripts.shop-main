@@ -1,12 +1,11 @@
 import { useState, useEffect, useRef } from 'react'; 
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import MechanicTablet from './component/mechanictablet';
 import logoIcon from './assets/logoIcon.png';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import { faDiscord, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './App.css';
-
-import MechanicTablet from './competition/mechanictablet';
 
 function App() {
   const [scrolled, setScrolled] = useState(false);
@@ -60,7 +59,7 @@ function App() {
               <header className={`header-container ${scrolled ? 'scrolled' : ''}`}>
                 <nav className="navbar-container">
                   <h3>
-                    <a href="https://shop.taxzyyyscripts.xyz">
+                    <a href="http://localhost:5173">
                       <img className="logoImg" src={logoIcon} alt="Logo" />
                     </a>
                   </h3>
@@ -89,7 +88,7 @@ function App() {
                 </div>
               </section>
 
-              <Link to="/mechanictablet" style={{ textDecoration: 'none'}}>
+              <a href='' style={{ textDecoration: 'none'}}>
                 <section className='showcase-container' ref={mechanicTabletRef}>
                   <div className='mechanic-tablet'>
                     <h1>Mechanic Tablet</h1>
@@ -99,9 +98,9 @@ function App() {
                     <button className='showcase-button' id="showcase-showcase-button" style={{ cursor: 'pointer' }}>Showcase</button>
                   </div>
                 </section>
-              </Link>
+              </a>
 
-              <a href='' style={{ textDecoration: 'none'}}>
+              {/* <a href='' style={{ textDecoration: 'none'}}>
                 <section className='showcase-container' ref={policeTabletRef}>
                   <div className='police-tablet'>
                     <h1>FiveM Script</h1>
@@ -111,7 +110,7 @@ function App() {
                     <button className='showcase-button' id="showcase-showcase-button" style={{ cursor: 'pointer' }}>Showcase</button>
                   </div>
                 </section>
-              </a>
+              </a>  */}
 
               <section className='reviews-container'>
                 <h1>Reviews</h1>
