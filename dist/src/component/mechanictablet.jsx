@@ -17,16 +17,18 @@ function MechanicTablet() {
           <h3><a href="#">Store</a></h3>
           <h3><a href="#">Products <FontAwesomeIcon icon={faChevronDown} /></a></h3>
           <h3><a href="https://docs.taxzyyyscripts.xyz">Docs</a></h3>
-          <h3>
+
+          <div className='socials-container'>
             <a href="https://discord.gg/5Y8hqr64fJ">
-              <FontAwesomeIcon className='socials-container' id="discord-icon" icon={faDiscord} />
+              <FontAwesomeIcon id="discord-icon" icon={faDiscord} />
             </a>
-          </h3>
+          </div>
           <h3>
             <a href="https://github.com/TaxiMax1">
-              <FontAwesomeIcon className='socials-container' id="github-icon" icon={faGithub} />
+              <FontAwesomeIcon id="github-icon" icon={faGithub} />
             </a>
           </h3>
+
         </nav>
       </header>
 

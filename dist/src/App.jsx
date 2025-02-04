@@ -63,8 +63,8 @@ function App() {
                       <img className="logoImg" src={logoIcon} alt="Logo" />
                     </a>
                   </h3>
-                  <h3><a href="#">Store</a></h3>
-                  <h3><a href="#">Products <FontAwesomeIcon icon={faChevronDown} /></a></h3>
+                  <h3><a href="">Store</a></h3>
+                  <h3><a href="">Products <FontAwesomeIcon icon={faChevronDown} /></a></h3>
                   <h3><a href="https://docs.taxzyyyscripts.xyz">Docs</a></h3>
                   <h3>
                     <a href="https://discord.gg/5Y8hqr64fJ">

@@ -65,6 +65,7 @@ body {
   right: 0;
   width: 100%;
   background-color: #09070f; 
+  border-bottom: 1px solid var(--border-color);
   transition: opacity 0.2s ease-in-out;
   z-index: 1000;
 }
@@ -92,6 +93,7 @@ body {
 .navbar-container h3 {
   font-size: 12px;
   font-weight: 400;
+  letter-spacing: .2px;
   margin: 0;
   cursor: pointer;
   display: flex;
@@ -115,18 +117,17 @@ body {
 
 .logoImg {
   width: 100%;
-  max-width: 95px;
+  max-width: 215px;
   margin-top: 3px;
-  margin-left: -55px;
+  margin-left: -175px;
   justify-items: center;
   align-items: center;
   display: block;
 }
 
 #discord-icon {
-  width: 100%;
   font-size: 15px;
-  margin-left: 30px;
+  margin-left: 70px;
 }
 
 #github-icon {
@@ -134,13 +135,16 @@ body {
 }
 
 .socials-container {
-  color: var(--header-text-hover);
   display: flex;
   align-items: center;
   transition: all .4s ease-in-out;
 }
 
-.socials-container:hover {
+.socials-container a {
+  color: var(--header-text-hover);
+}
+
+.socials-container a:hover {
     color: var(--header-text);
 }
 
@@ -169,8 +173,7 @@ body {
   justify-content: center; 
   background-color: #13151780;
   height: 40px; 
-  padding: 5px 0px; 
-  border-top: 1px solid var(--border-color);
+  padding: 8px 0px; 
   z-index: 999;
   transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
@@ -201,9 +204,10 @@ body {
 
 .preview-script p {
   color: var(--header-text-hover);
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
-  margin: 0; 
+  margin-left: -130px; 
+  margin-top: 20px;
   transition: transform 0.3s ease-in-out, backdrop-filter 0.3s ease-in-out;
 }
 
