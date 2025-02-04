@@ -17,6 +17,11 @@
     --footer-text: #ffffffb3;
     --footer-text-hover: #fff;
 
+    --showcase-text: #a0a3b4;
+    --showcase-border: #22252b;
+
+    --usedby-hover: #fffc;
+
     --font-family: Roboto, sans-serif;;
 }
 
@@ -284,23 +289,23 @@ body {
 
 
 .supported-frameworks {
-    background-color: transparent;
-    color: var(--header-text);
-    font-size: 12px;
-    display: flex;
-    width: 100%;
-    max-width: 45px;
-    height: 30px;
-    border: 1px solid var(--border-color);
-    border-radius: 10px;
-    margin-left: 150px;
+  background-color: transparent;
+  color: var(--header-text);
+  font-size: 12px;
+  display: flex;
+  width: 100%;
+  max-width: 45px;
+  height: 30px;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  margin-left: 150px;
 }
 
 .supported-frameworks p {
-    display: flex;
-    align-items: center; 
-    justify-content: center; 
-    margin: 12px 11px;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  margin: 12px 11px;
 }
 
 .showcase-button {
@@ -438,12 +443,154 @@ body {
 
 .script-description {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: transparent;
-  height: auto; 
-  margin: 50px;
+  height: auto;
+  margin-top: 180px;
   padding: 20px 0px;
-  text-align: center; 
+  text-align: center;
+  animation: zoomIn 0.6s ease-out forwards;
+  user-select: none;
+}
+
+.script-description h1 {
+  color: var(--text-color);
+  font-size: 4.5rem;
+  font-weight: 600;
+  line-height: 1;
+  margin: 0px 0;
+}
+
+.script-description h3 {
+  color: var(--text-color);
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.125rem;
+}
+
+.supported-frameworks-mechanic {
+  background-color: transparent;
+  color: var(--showcase-text);
+  font-size: .75rem;
+  font-weight: 500;
+  display: flex;
+  width: 100%;
+  max-width: 45px;
+  height: 30px;
+  border: 1px solid var(--showcase-border);
+  border-radius: .8rem;
+  margin-left: 10px;
+}
+
+.supported-frameworks-mechanic p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15.5px 11.5px;
+}
+
+.button-container {
+  display: flex;
+  gap: 1rem; 
+  margin-top: 1rem;
+}
+
+.description-button {
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  padding: .5rem 1.5rem;
+  font-family: Roboto, sans-serif;
+  font-size: .9rem;
+  font-weight: 500;
+  outline: none;
+  border: 1px solid #22252b;
+  border-radius: .5rem;
+  transition: all .2s ease-in-out;
+  animation: Animation 0.5s ease-out forwards;
+  cursor: pointer;
+}
+
+#showcase-buy-button:hover {
+  background-color: var(--button-bg-hover);
+  transform: scale(1.03);
+}
+
+#showcase-showcase-button {
+  background-color: transparent;
+  border: 1px solid var(--button-bg);
+  color: var(--header-text);
+}
+
+#showcase-showcase-button:hover {
+  border: 1px solid var(--border-color-hover);
+  transform: scale(1.03);
+}
+
+
+
+
+
+.script-usedby {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  background-color: transparent;
+  height: auto;
+  margin-top: 50px;
+  padding: 20px 0px;
+  text-align: center;
+  animation: zoomIn 0.6s ease-out forwards;
+  user-select: none;
+}
+
+.script-usedby h1 {
+  color: var(--text-color);
+  font-size: 3.7rem;
+  font-weight: 600;
+  line-height: 1;
+  margin: 0px 0;
+}
+
+.usedby-container {
+  display: flex;
+  gap: 1.5rem;
+  max-width: 50%;
+}
+
+.usedby-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex: 1;
+  width: 100%;
+  position: relative;
+  border: 1px solid rgba(255,255,255,.05);
+  background: radial-gradient(circle at bottom center,rgba(255,255,255,.1),rgba(19,21,23,.5));
+  backdrop-filter: blur(5px);
+  padding: 4rem 3rem;
+}
+
+.usedby-value {
+  color: var(--text-color);
+  text-shadow: 0 0 .75rem rgba(0,0,0,.5);
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+.usedby-label {
+  color: var(--usedby-hover);
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  font-size: .9rem;
+  font-weight: 500;
+}
+
+.script-usedby h5 {
+  color: var(--);
 }

@@ -33,6 +33,32 @@ function MechanicTablet() {
 
           <section className='script-description'>
             <h1>Mechanic Tablet</h1>
+            <h3>Most Unique And Advanced Mechanic Tablet</h3>
+            <div className='supported-frameworks-mechanic'><p>ESX</p></div>
+
+            <div className="button-container">
+              <button className='description-button' id="showcase-buy-button">Purchase</button>
+              <button className='description-button' id="showcase-showcase-button">Documentation</button>
+            </div>
+          </section>
+
+          <section className='script-usedby'>
+            <h1>Used by.</h1>
+
+            <div className='usedby-container'>
+              <div className='usedby-box'>
+                <div className='usedby-value'>6.935</div>
+                <div className='usedby-label'>Servers</div>
+              </div>
+
+              <div className='usedby-box'>
+                <div className='usedby-value'>65.034</div>
+                <div className='usedby-label'>Players</div>
+              </div>
+            </div>
+
+            <h5>Updated last 24h</h5>
+            <h4>Statics powered by <span>5Mertrics</span></h4>
           </section>
     </div>
   );
