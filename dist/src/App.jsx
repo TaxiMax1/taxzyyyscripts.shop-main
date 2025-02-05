@@ -88,7 +88,7 @@ function App() {
                 </div>
               </section>
 
-              <a href='' style={{ textDecoration: 'none'}}>
+              <a href='http://localhost:5173/mechanictablet' style={{ textDecoration: 'none'}}>
                 <section className='showcase-container' ref={mechanicTabletRef}>
                   <div className='mechanic-tablet'>
                     <h1>Mechanic Tablet</h1>
@@ -100,17 +100,17 @@ function App() {
                 </section>
               </a>
 
-              {/* <a href='' style={{ textDecoration: 'none'}}>
+              <a href='http://localhost:5173/websites' style={{ textDecoration: 'none'}}>
                 <section className='showcase-container' ref={policeTabletRef}>
                   <div className='police-tablet'>
-                    <h1>FiveM Script</h1>
-                    <h3>An Advanced FiveM Coded FiveM Script</h3>
+                    <h1>Websites</h1>
+                    <h3>A simple modern website for your Store, FiveM Server or Documentation</h3>
                     <div className='supported-frameworks' style={{ marginLeft: '130px'}}><p>ESX</p></div>
                     <button className='showcase-button' id="showcase-buy-button" style={{ cursor: 'pointer' }}>Purchase</button>
                     <button className='showcase-button' id="showcase-showcase-button" style={{ cursor: 'pointer' }}>Showcase</button>
                   </div>
                 </section>
-              </a>  */}
+              </a> 
 
               <section className='reviews-container'>
                 <h1>Reviews</h1>
