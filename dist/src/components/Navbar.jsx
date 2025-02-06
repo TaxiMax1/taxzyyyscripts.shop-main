@@ -21,7 +21,7 @@ function Navbar() {
     };
 
     return (
-        <header className={`header-container ${scrolled ? 'scrolled' : ''}`}>
+      <header className={`header-container ${scrolled ? 'scrolled' : ''}`}>
                 <nav className="navbar-container">
                   <h3>
                     <a href="http://localhost:5173">
