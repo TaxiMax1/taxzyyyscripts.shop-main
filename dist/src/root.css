@@ -1,0 +1,39 @@
+:root {
+    --bg-color: #05010d;
+    --text-color: #fff;
+
+    --header-text: #ffffffb3;
+    --header-text-hover: #fff;
+
+    --button-bg: #ffffffe6;
+    --button-bg-hover: #ffffffb9;
+    --button-text: #16181a;
+
+    --border-color: #ffffff1a;
+    --border-color-hover: #ffffff76;
+
+    --footer-text: #ffffffb3;
+    --footer-text-hover: #fff;
+
+    --showcase-text: #a0a3b4;
+    --showcase-border: #22252b;
+
+    --usedby-hover: #fffc;
+  
+    --partner-color: #cf5050;
+
+    --svg-color: #f5f5f7e6;
+    --svg-color-shadow: rgba(245,245,247,.75);
+
+    --ad-text: #f5f5f7a6;
+    --ad-text-description: #f5f5f7;
+
+    --sectiondivider-color: #ffffff26;
+
+    --optimize-text: #ffffffbf;
+
+    --products-text: #fffc;
+    --products-description: #ffffff80;
+
+    --font-family: Roboto, sans-serif;;
+}

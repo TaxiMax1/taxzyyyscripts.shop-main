@@ -1,3 +1,4 @@
+import { useState, useRef } from 'react';
 import CountUp from './CountUp';
 import logoIcon from '../assets/logoIcon.png';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
@@ -5,30 +6,73 @@ import { faDiscord, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function MechanicTablet() {
+  const [showProducts, setShowProducts] = useState(false);
+  const dropdownTimeout = useRef(null);
+
+  const handleMouseEnter = () => {
+    clearTimeout(dropdownTimeout.current);
+    setShowProducts(true);
+  };
+
+  const handleMouseLeave = () => {
+    dropdownTimeout.current = setTimeout(() => {
+      setShowProducts(false);
+    }, 100);
+  };
+
   return (
     <div>
-      <header className="header-container">
+      <header className={`header-container`}>
         <nav className="navbar-container">
           <h3>
             <a href="http://localhost:5173">
               <img className="logoImg" src={logoIcon} alt="Logo" />
             </a>
           </h3>
-          <h3><a href="#">Store</a></h3>
-          <h3><a href="#">Products <FontAwesomeIcon icon={faChevronDown} /></a></h3>
-          <h3><a href="https://docs.taxzyyyscripts.xyz">Docs</a></h3>
+          <h3><a href="">Store</a></h3>
+                  
+          <h3 
+            onMouseEnter={handleMouseEnter} 
+            onMouseLeave={handleMouseLeave}
+          >
+          Products <FontAwesomeIcon icon={faChevronDown} />
+          <div 
+            className={`products-container ${showProducts ? 'show' : ''}`} 
+            onMouseEnter={handleMouseEnter} 
+            onMouseLeave={handleMouseLeave}
+          >
+            <div className="products-items">
+              <a href='/mechanictablet'>
+                <div className='products-item'>
+                  <div className='products-title'>Mechanic Tablet</div>
+                  <div className='products-description'>
+                    An advanced FiveM Mechanic tablet designed to streamline vehicle repairs, upgrades, and diagnostics.
+                  </div>
+                </div>
+              </a>
 
-          <div className='socials-container'>
-            <a href="https://discord.gg/5Y8hqr64fJ">
-              <FontAwesomeIcon id="discord-icon" icon={faDiscord} />
-            </a>
-          </div>
-          <h3>
-            <a href="https://github.com/TaxiMax1">
-              <FontAwesomeIcon id="github-icon" icon={faGithub} />
-            </a>
+              <a href='/websites'>
+                <div className='products-item'>
+                <div className='products-title'>Websites</div>
+                  <div className='products-description'>
+                    Custom-built websites tailored for various needs like FiveM servers, webshops, and portfolios.
+                  </div>
+                </div>
+              </a>
+            </div>
+            </div>
           </h3>
 
+          <h3><a href="https://docs.taxzyyyscripts.xyz">Docs</a></h3>
+
+          <div className="socials-wrapper">
+            <a href="https://discord.gg/5Y8hqr64fJ">
+              <FontAwesomeIcon className='social-icon' id="discord-icon" icon={faDiscord} />
+            </a>
+            <a href="https://github.com/TaxiMax1">
+              <FontAwesomeIcon className='social-icon' id="github-icon" icon={faGithub} />
+            </a>
+          </div>
         </nav>
       </header>
 
@@ -38,8 +82,13 @@ function MechanicTablet() {
         <div className='supported-frameworks-mechanic'><p>ESX</p></div>
 
         <div className="button-container">
-          <button className='description-button' id="showcase-buy-button">Purchase</button>
-          <button className='description-button' id="showcase-showcase-button">Documentation</button>
+          <a href=''>
+            <button className='description-button' id="showcase-buy-button">Purchase</button>
+          </a>
+
+          <a href='https://docs.taxzyyyscripts.xyz/mechanictablet'>
+            <button className='description-button' id="showcase-showcase-button">Documentation</button>
+          </a>
         </div>
       </section>
 
@@ -62,7 +111,7 @@ function MechanicTablet() {
           </div>
         </div>
 
-        <h5>Updated last 24h</h5>
+        <h5>NOT REAL NUMBERS JUS TESTIN!</h5>
         <h4>Statistics powered by <span>
             <a href='https://5metrics.dev/resource/ox_inventory'>5Metrics</a>
           </span>
