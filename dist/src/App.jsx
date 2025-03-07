@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react'; 
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import WebsitesShowcase from './components/txzFiveMWebsites';
 import BossMenu from './components/bossmenu';
 import logoIcon from './assets/logoIcon.png';
@@ -76,7 +76,7 @@ function App() {
               <header className={`header-container ${scrolled ? 'scrolled' : ''}`}>
                 <nav className="navbar-container">
                   <h3>
-                    <a href="http://localhost:5173">
+                    <a href="http://store.taxzyyyscripts.xyz">
                       <img className="logoImg" src={logoIcon} alt="Logo" />
                     </a>
                   </h3>
@@ -93,7 +93,7 @@ function App() {
                       onMouseLeave={handleMouseLeave}
                     >
                       <div className="products-items">
-                        <a href='/bossmenu'>
+                        <a href='#/bossmenu'>
                           <div className='products-item'>
                             <div className='products-header'>
                               <img className="products-logoImg" src={logoIcon} alt="Logo" />
@@ -105,7 +105,7 @@ function App() {
                           </div>
                         </a>
 
-                        <a href='/txzFiveMWebsites'>
+                        <a href='#/txzFiveMWebsites'>
                           <div className='products-item'>
                             <div className='products-header'>
                               <img className="products-logoImg" src={logoIcon} alt="Logo" />
@@ -143,14 +143,14 @@ function App() {
                 </div>
               </section>
 
-              <a href='/bossmenu' style={{ textDecoration: 'none'}}>
+              <a href='#/bossmenu' style={{ textDecoration: 'none'}}>
                 <section className='showcase-container' ref={mechanicTabletRef}>
                   <div className='mechanic-tablet'>
                     <h1>Boss Menu</h1>
                     <h3>Most Unique And Advanced Boss Menu</h3>
                     <div className='supported-frameworks'><p>ESX</p></div>
                     
-                    <a href='/bossmenu'><button className='showcase-button'>Purchase</button></a>
+                    <a href='#/bossmenu'><button className='showcase-button'>Purchase</button></a>
                     <a href=''><button className='showcase-button' id='showcase-showcase-button'>Showcase</button></a>
                   </div>
 

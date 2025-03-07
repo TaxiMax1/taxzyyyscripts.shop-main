@@ -25,11 +25,11 @@ function BossMenu() {
       <header className={`header-container`}>
         <nav className="navbar-container">
           <h3>
-            <a href="http://localhost:5173">
+            <a href="https://store.taxzyyyscripts.xyz">
               <img className="logoImg" src={logoIcon} alt="Logo" />
             </a>
           </h3>
-          <h3><a href="">Store</a></h3>
+          <h3><a href="https://taxzyyyscripts.tebex.io/">Store</a></h3>
                   
           <h3 
             onMouseEnter={handleMouseEnter} 
@@ -42,7 +42,7 @@ function BossMenu() {
             onMouseLeave={handleMouseLeave}
           >
             <div className="products-items">
-              <a href="/mechanictablet">
+              <a href="#/bossmenu">
                 <div className="products-item">
                   <div className="products-header">
                     <img className="products-logoImg" src={logoIcon} alt="Logo" />
@@ -54,7 +54,7 @@ function BossMenu() {
                 </div>
               </a>
 
-              <a href="/txzFiveMWebsites">
+              <a href="#/txzFiveMWebsites">
                 <div className="products-item">
                   <div className="products-header">
                     <img className="products-logoImg" src={logoIcon} alt="Logo" />
@@ -88,11 +88,11 @@ function BossMenu() {
         <div className='supported-frameworks-mechanic'><p>ESX</p></div>
 
         <div className="button-container">
-          <a href='https://taxzyyyscripts.tebex.io/mechanictablet'>
+          <a href='https://taxzyyyscripts.tebex.io/bossmenu'>
             <button className='description-button' id="showcase-buy-button">Purchase</button>
           </a>
 
-          <a href='https://docs.taxzyyyscripts.xyz/mechanictablet'>
+          <a href='https://docs.taxzyyyscripts.xyz/bossmenu'>
             <button className='description-button' id="showcase-showcase-button">Documentation</button>
           </a>
         </div>

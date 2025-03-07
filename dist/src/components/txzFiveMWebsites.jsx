@@ -73,11 +73,11 @@ function WebsitesShowcase() {
         <header className={`header-container ${scrolled ? 'scrolled' : ''}`}>
           <nav className="navbar-container">
             <h3>
-              <a href="http://localhost:5173">
+              <a href="https://store.taxzyyyscripts.xyz">
                 <img className="logoImg" src={logoIcon} alt="Logo" />
               </a>
             </h3>
-            <h3><a href="/">Store</a></h3>
+            <h3><a href="https://taxzyyyscripts.tebex.io/">Store</a></h3>
                           
             <h3 
               onMouseEnter={handleMouseEnter} 
@@ -91,7 +91,7 @@ function WebsitesShowcase() {
                 >
                 
                 <div className="products-items">
-                    <a href='/bossmenu'>
+                    <a href='#/bossmenu'>
                       <div className='products-item'>
                         <div className='products-header'>
                           <img className="products-logoImg" src={logoIcon} alt="Logo" />
@@ -103,7 +103,7 @@ function WebsitesShowcase() {
                       </div>
                     </a>
 
-                    <a href='/txzFiveMWebsites'>
+                    <a href='#/txzFiveMWebsites'>
                     <div className='products-item'>
                       <div className='products-header'>
                         <img className="products-logoImg" src={logoIcon} alt="Logo" />
