@@ -5,7 +5,7 @@ import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import { faDiscord, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-function MechanicTablet() {
+function BossMenu() {
   const [showProducts, setShowProducts] = useState(false);
   const dropdownTimeout = useRef(null);
 
@@ -42,20 +42,26 @@ function MechanicTablet() {
             onMouseLeave={handleMouseLeave}
           >
             <div className="products-items">
-              <a href='/mechanictablet'>
-                <div className='products-item'>
-                  <div className='products-title'>Mechanic Tablet</div>
-                  <div className='products-description'>
+              <a href="/mechanictablet">
+                <div className="products-item">
+                  <div className="products-header">
+                    <img className="products-logoImg" src={logoIcon} alt="Logo" />
+                    <div className="products-title">Boss Menu</div>
+                  </div>
+                  <div className="products-description">
                     An advanced FiveM Mechanic tablet designed to streamline vehicle repairs, upgrades, and diagnostics.
                   </div>
                 </div>
               </a>
 
-              <a href='/websites'>
-                <div className='products-item'>
-                <div className='products-title'>Websites</div>
-                  <div className='products-description'>
-                    Custom-built websites tailored for various needs like FiveM servers, webshops, and portfolios.
+              <a href="/txzFiveMWebsites">
+                <div className="products-item">
+                  <div className="products-header">
+                    <img className="products-logoImg" src={logoIcon} alt="Logo" />
+                    <div className="products-title">Websites</div>
+                  </div>
+                  <div className="products-description">
+                    Custom-built websites tailored for various needs like FiveM servers, webshops, portfolios, and even more.
                   </div>
                 </div>
               </a>
@@ -77,12 +83,12 @@ function MechanicTablet() {
       </header>
 
       <section className='script-description'>
-        <h1>Mechanic Tablet</h1>
-        <h3>Most Unique And Advanced Mechanic Tablet</h3>
+        <h1>Boss Menu</h1>
+        <h3>Most Unique And Advanced Boss Menu</h3>
         <div className='supported-frameworks-mechanic'><p>ESX</p></div>
 
         <div className="button-container">
-          <a href=''>
+          <a href='https://taxzyyyscripts.tebex.io/mechanictablet'>
             <button className='description-button' id="showcase-buy-button">Purchase</button>
           </a>
 
@@ -90,32 +96,6 @@ function MechanicTablet() {
             <button className='description-button' id="showcase-showcase-button">Documentation</button>
           </a>
         </div>
-      </section>
-
-      <section className='script-usedby'>
-        <h1>Used by.</h1>
-
-        <div className='usedby-container'>
-          <div className='usedby-box'>
-            <div className='usedby-value'>
-            <div className='usedby-value'><CountUp endValue={6877} duration={10000} /></div>
-            </div>
-            <div className='usedby-label'>Servers</div>
-          </div>
-
-          <div className='usedby-box'>
-            <div className='usedby-value'>
-            <div className='usedby-value'><CountUp endValue={76297} duration={10000} /></div>
-            </div>
-            <div className='usedby-label'>Players</div>
-          </div>
-        </div>
-
-        <h5>NOT REAL NUMBERS JUS TESTIN!</h5>
-        <h4>Statistics powered by <span>
-            <a href='https://5metrics.dev/resource/ox_inventory'>5Metrics</a>
-          </span>
-        </h4>
       </section>
 
       <section className='ad-container'>
@@ -195,4 +175,4 @@ function MechanicTablet() {
   );
 }
 
-export default MechanicTablet;
+export default BossMenu;

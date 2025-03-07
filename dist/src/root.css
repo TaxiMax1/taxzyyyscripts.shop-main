@@ -35,5 +35,11 @@
     --products-text: #fffc;
     --products-description: #ffffff80;
 
+    --projects-bg: #05010d;
+    --projects-text: #aaaaaa;
+    --projects-button: #ffffff97;
+    --projects-button-hover: #ffffff65;
+    --projects-border: #333;
+
     --font-family: Roboto, sans-serif;;
 }
